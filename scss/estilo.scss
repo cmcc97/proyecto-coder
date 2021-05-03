@@ -1,0 +1,229 @@
+$tipografiaTitulo: 'Redressed', cursive;
+$estiloTitulo: italic;
+$tamañoTituloPrincipal: 2em;
+$tamañoTituloSecundario: 1.5em;
+$tamañoSubtitulo: 1em;
+$colorTitulo: rgb(79, 113, 120);
+$tipografiaParrafo: Verdana, Geneva, Tahoma, sans-serif;
+$tamañoParrafo: 0.8em;
+$colorParrafo: rgb(79, 113, 120);
+    
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 90px 30px auto 30px;
+}
+main{
+    padding: 10px;
+    background-color: rgb(242, 222, 189);
+    justify-content: center;
+
+    h2{
+        font-family: $tipografiaTitulo;
+        font-size: $tamañoTituloPrincipal;
+        text-align: center;
+        color: $colorTitulo;
+    }
+}
+a{
+    text-decoration: none;
+    color: $colorParrafo;
+    &:hover{
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+}
+.encabezado{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 175, 142);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $colorTitulo;
+    height: 100%;
+
+    &__logo{
+        height: 100%;
+    }
+
+    &__imagen{
+        margin: 5%;
+        height: 90%;
+    }
+
+    &__titulo{
+        font-family: $tipografiaTitulo;
+        font-style: $estiloTitulo;
+        margin: 1%;
+        
+    }
+}
+.navegacion{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgb(226, 193, 139);
+    font-size: 1em;
+    font-family: $tipografiaTitulo;
+    color: $colorTitulo;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    &__item{
+        margin-right: 1em;
+        
+
+        &--actual{
+            font-weight: bold;
+        }
+    }
+}
+.seccion{
+    color: rgb(79, 113, 120);
+    
+    &__titulo{
+        font-family: $tipografiaTitulo;
+        font-size: $tamañoTituloPrincipal;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    &__parrafo{
+        font-family: $tipografiaParrafo;
+        font-size: $tamañoParrafo;
+    }
+}
+.aside{
+    color: rgb(79, 113, 120);
+    justify-content: center;
+    
+    &__titulo{
+        font-family: $tipografiaTitulo;
+        font-size: $tamañoTituloPrincipal;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+       &__subtitulo{
+        font-family: $tipografiaTitulo;
+        font-size: $tamañoTituloSecundario;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    &__parrafo{
+        font-family: $tipografiaParrafo;
+        font-size: $tamañoParrafo;
+    }
+}
+.articulo{
+    display: flex;
+    flex-direction: row;
+    height: 35vh;
+    border-color: $colorTitulo;
+    border-bottom-style: solid;
+    border-top-style: solid;
+
+    &__portada{
+        width: 150px;
+        margin: 5px;
+    }
+    
+    &__imagen{
+        display: inline-block;
+        height: 90%;
+    }
+
+    &__titulo{
+        font-family: $tipografiaTitulo;
+        font-size: $tamañoSubtitulo;
+        color: $colorTitulo;
+    }
+
+    &__parrafo{
+        font-family: $tipografiaParrafo;
+        color: $colorParrafo;
+    }
+}
+.articulo--superior{
+    @extend .articulo;
+    border-top-style: none;
+}
+.articulo--inferior{
+    @extend .articulo;
+    border-bottom-style: none;
+}
+.redes{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgb(226, 193, 139);
+    font-size: large;
+    font-family: 'Redressed', cursive;
+    color: rgb(79, 113, 120);
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__seguinos{
+        margin-right: 10px;
+    }
+
+    &__red{
+        margin-right: 10px;
+    }
+}
+.formulario{
+    background-color: lightgoldenrodyellow;
+    color: $colorParrafo;
+    
+    &__nombreInput{
+        font-weight: bold;
+    }
+    &__desplegable{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    &__checkbox{
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+.tabla{
+    background-color: lightgray;
+    justify-content: center;
+
+    &__titulo{
+        font-family: $tipografiaTitulo;
+        color: $colorTitulo;
+    }
+}
+@mixin titulos ($tamano, $fuente, $color) {
+    font-size: $tamano;
+    font-family: $fuente;
+    color: $color;
+}
+h1{
+    @include titulos(5em, 'Redressed', rgb(79, 113, 120))
+}
+h2{
+    @include titulos(2em, 'Redressed', rgb(79, 113, 120))
+}
+h3{
+    @include titulos(1em, 'Redressed', rgb(79, 113, 120))
+}
+h4{
+    @include titulos(0.8em, 'Redressed', rgb(79, 113, 120))
+}
+h5{
+    @include titulos(0.5em, 'Redressed', rgb(79, 113, 120))
+}

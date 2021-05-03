@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Librería, Libros, Lectura, Contacto, Comunicación">
+    <meta name="description" content="Librería La Cueva del Ratón: Contactate con nosotros, queremos saber tu opinión.">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <span class="encabezado__logo">
+                <img class="encabezado__imagen" src="logo.jpg" alt="Logo">
+            </span>
+            <h1 class="encabezado__titulo">La cueva del Ratón</h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="navegacion">
+          <li class="navegacion__item"> <a href="index.html">Home</a> </li>
+          <li class="navegacion__item"> <a href="catalogo.html">Catálogo</a> </li>
+          <li class="navegacion__item"> <a href="recomendaciones.html">Recomendaciones</a> </li>
+          <li class="navegacion__item navegacion__item--actual"> <a href="contacto.html">Contacto</a> </li>
+        </ul>
+    </nav>
+    <main>        
+        <form class="formulario" action="#" method="GET">
+            <fieldset class="formulario__campo">
+                <legend class="formulario__titulo">Contactanos</legend>
+                <h4 class="formulario__nombreInput">Nombre:</h4>
+                <input class="formulario__input" type="text" placeholder="Nombre">
+                <h4 class="formulario__nombreInput">Correo electrónico:</h4>
+                <input class="formulario__input" type="email" placeholder="E-mail">
+                <div class="formulario__desplegable">
+                    <label class="formulario__nombreInput" for="motivo">Motivo de la consulta:</label>
+                    <select name="" id="motivo">
+                    <option value="reserva">Reservar un libro</option>
+                    <option value="consulta">Consultar stock</option>
+                    <option value="queja">Queja</option>
+                    <option value="otro">Otro</option>           
+                    </select>
+                </div>         
+                <h4 class="formulario__nombreInput">Mensaje:</h4>
+                <textarea class="formulario__area" name="mensaje" id="mensaje" placeholder="Escriba aquí su mensaje." cols="30" rows="10"></textarea>
+                <div class="formulario__checkbox">
+                    <label class="formulario__nombreInput" for="recomendaciones">Quiero recibir las recomendaciones semanales</label>
+                    <input type="checkbox" name="recomendaciones" id="recomendaciones">
+                </div>               
+                <input class="formulario__boton" type="reset" value="Vaciar">
+                <input class="formulario__boton" type="submit" value="Enviar">            
+            </fieldset>
+        </form>
+    </main>    
+    <footer>
+        <ul class="redes">
+          <li class="redes__seguinos">Seguinos en: </li>
+          <li class="redes__red"><a href="https://facebook.com">Facebook</a></li>
+          <li class="redes__red"><a href="https://twitter.com">Twitter</a></li>
+          <li class="redes__red"><a href="https://instagram.com">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

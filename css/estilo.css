@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 90px 30px auto 30px; }
+
+main {
+  padding: 10px;
+  background-color: #f2debd;
+  justify-content: center; }
+  main h2 {
+    font-family: "Redressed", cursive;
+    font-size: 2em;
+    text-align: center;
+    color: #4f7178; }
+
+a {
+  text-decoration: none;
+  color: #4f7178; }
+  a:hover {
+    font-weight: bolder;
+    text-decoration: underline; }
+
+.encabezado {
+  margin: 0;
+  padding: 0;
+  background-color: #e4af8e;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #4f7178;
+  height: 100%; }
+  .encabezado__logo {
+    height: 100%; }
+  .encabezado__imagen {
+    margin: 5%;
+    height: 90%; }
+  .encabezado__titulo {
+    font-family: "Redressed", cursive;
+    font-style: italic;
+    margin: 1%; }
+
+.navegacion {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #e2c18b;
+  font-size: 1em;
+  font-family: "Redressed", cursive;
+  color: #4f7178;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .navegacion__item {
+    margin-right: 1em; }
+    .navegacion__item--actual {
+      font-weight: bold; }
+
+.seccion {
+  color: #4f7178; }
+  .seccion__titulo {
+    font-family: "Redressed", cursive;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline; }
+  .seccion__parrafo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em; }
+
+.aside {
+  color: #4f7178;
+  justify-content: center; }
+  .aside__titulo {
+    font-family: "Redressed", cursive;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline; }
+  .aside__subtitulo {
+    font-family: "Redressed", cursive;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none; }
+  .aside__parrafo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em; }
+
+.articulo, .articulo--superior, .articulo--inferior {
+  display: flex;
+  flex-direction: row;
+  height: 35vh;
+  border-color: #4f7178;
+  border-bottom-style: solid;
+  border-top-style: solid; }
+  .articulo__portada {
+    width: 150px;
+    margin: 5px; }
+  .articulo__imagen {
+    display: inline-block;
+    height: 90%; }
+  .articulo__titulo {
+    font-family: "Redressed", cursive;
+    font-size: 1em;
+    color: #4f7178; }
+  .articulo__parrafo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4f7178; }
+
+.articulo--superior {
+  border-top-style: none; }
+
+.articulo--inferior {
+  border-bottom-style: none; }
+
+.redes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #e2c18b;
+  font-size: large;
+  font-family: 'Redressed', cursive;
+  color: #4f7178;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center; }
+  .redes__seguinos {
+    margin-right: 10px; }
+  .redes__red {
+    margin-right: 10px; }
+
+.formulario {
+  background-color: lightgoldenrodyellow;
+  color: #4f7178; }
+  .formulario__nombreInput {
+    font-weight: bold; }
+  .formulario__desplegable {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+  .formulario__checkbox {
+    margin-top: 2em;
+    margin-bottom: 2em; }
+
+.tabla {
+  background-color: lightgray;
+  justify-content: center; }
+  .tabla__titulo {
+    font-family: "Redressed", cursive;
+    color: #4f7178; }
+
+h1 {
+  font-size: 5em;
+  font-family: "Redressed";
+  color: #4f7178; }
+
+h2 {
+  font-size: 2em;
+  font-family: "Redressed";
+  color: #4f7178; }
+
+h3 {
+  font-size: 1em;
+  font-family: "Redressed";
+  color: #4f7178; }
+
+h4 {
+  font-size: 0.8em;
+  font-family: "Redressed";
+  color: #4f7178; }
+
+h5 {
+  font-size: 0.5em;
+  font-family: "Redressed";
+  color: #4f7178; }
